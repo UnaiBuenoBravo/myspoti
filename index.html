@@ -18,6 +18,11 @@
             border-collapse: collapse;
             width: 90%;
             margin:  auto;}
+    form {
+        font-family: Arial, sans-serif;
+        margin: 30;
+        padding: 30;
+    }
     .DQE {
         text-align: center;
         margin: auto;
@@ -426,5 +431,20 @@
                 </td>
             </tfoot>
     </table>
+    <br><br>
+    <form id="formulario" action="recepcion.php" method="get">
+        <fieldset>
+            <legend>Nombre</legend>
+            <label for="nombre"></label>
+            <input id="nombre" name="nombre" placeholder="Introduce tu nombre">
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Comentarios / Observaciones</legend>
+            <textarea rows="4" cols="80"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
 </body>
 </html>
